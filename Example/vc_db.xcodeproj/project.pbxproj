@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C8F6332C03512169113372DD /* Pods_vc_db_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC6D60A5D513B02411CCE26 /* Pods_vc_db_Tests.framework */; };
+		F3D103EC229CF93200CE624C /* weicigz.db in Resources */ = {isa = PBXBuildFile; fileRef = F3D103EB229CF93200CE624C /* weicigz.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		AAC6D60A5D513B02411CCE26 /* Pods_vc_db_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vc_db_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD454E3DA945DF419EA3EADD /* vc_db.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = vc_db.podspec; path = ../vc_db.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6C8F2F4BD22C97346DE0887 /* Pods-vc_db_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vc_db_Example.release.xcconfig"; path = "Target Support Files/Pods-vc_db_Example/Pods-vc_db_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F3D103EB229CF93200CE624C /* weicigz.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = weicigz.db; sourceTree = "<group>"; };
 		F5A9427ACDBBA3A05DE80DF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* VCDBViewController.h */,
 				6003F5A6195388D20070C39A /* VCDBViewController.m */,
+				F3D103EB229CF93200CE624C /* weicigz.db */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -280,6 +283,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				F3D103EC229CF93200CE624C /* weicigz.db in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

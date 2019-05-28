@@ -7,8 +7,11 @@
 //
 
 #import "VCDBViewController.h"
+#import <BaseDAO.h>
 
 @interface VCDBViewController ()
+
+@property (nonatomic, strong) BaseDAO *dao;
 
 @end
 
@@ -17,13 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    DBConfiguration *config = DBConfiguration.new;
+    config.path = [[NSBundle mainBundle] pathForResource:@"weicigz.db" ofType:nil];
+    self.dao = [BaseDAO daoWithConfiguration:config];
+    
+    NSDictionary *obj = [self.dao objectWithSQL:@"select * from fb_word where id=?" params:@[@71] rowMapper:nil];
+    NSLog(@"%@", obj);
 }
 
 @end
