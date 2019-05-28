@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+维词数据库操作底层封装
                        DESC
 
   s.homepage         = 'https://github.com/daydreamsan/vc_db'
@@ -38,5 +38,7 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FMDB', '~> 2.6.2'
+  s.dependency 'YYModel', '~> 1.0.4'
+  s.dependency 'JSONModel', '~> 1.7.0'
 end

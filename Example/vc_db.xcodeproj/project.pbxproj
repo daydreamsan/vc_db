@@ -61,12 +61,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		731372769EF777821373442B /* Pods-vc_db_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vc_db_Tests.debug.xcconfig"; path = "Target Support Files/Pods-vc_db_Tests/Pods-vc_db_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9390858A3C28B0C3C5DB436F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9390858A3C28B0C3C5DB436F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A80A1896101C1341E51DB63E /* Pods-vc_db_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vc_db_Tests.release.xcconfig"; path = "Target Support Files/Pods-vc_db_Tests/Pods-vc_db_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AAC6D60A5D513B02411CCE26 /* Pods_vc_db_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_vc_db_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD454E3DA945DF419EA3EADD /* vc_db.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = vc_db.podspec; path = ../vc_db.podspec; sourceTree = "<group>"; };
+		AD454E3DA945DF419EA3EADD /* vc_db.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = vc_db.podspec; path = ../vc_db.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B6C8F2F4BD22C97346DE0887 /* Pods-vc_db_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vc_db_Example.release.xcconfig"; path = "Target Support Files/Pods-vc_db_Example/Pods-vc_db_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F5A9427ACDBBA3A05DE80DF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F5A9427ACDBBA3A05DE80DF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				731372769EF777821373442B /* Pods-vc_db_Tests.debug.xcconfig */,
 				A80A1896101C1341E51DB63E /* Pods-vc_db_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-vc_db_Example/Pods-vc_db_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 				"${BUILT_PRODUCTS_DIR}/vc_db/vc_db.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/vc_db.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
