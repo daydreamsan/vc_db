@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'vc_db_Example' do
+  pod 'vc_db', :path => '../'
+
+  target 'vc_db_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
