@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'vc_db'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of vc_db.'
 
 # This description is used to generate tags and improve search results.
@@ -41,4 +41,5 @@ Pod::Spec.new do |s|
   s.dependency 'FMDB', '~> 2.6.2'
   s.dependency 'YYModel', '~> 1.0.4'
   s.dependency 'JSONModel', '~> 1.7.0'
+  s.dependency 'Realm', '~> 2.7.0'
 end

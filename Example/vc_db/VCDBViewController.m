@@ -29,7 +29,7 @@
         WCWord *w = [[WCWord alloc] initWithDict:rs.resultDictionary];
         return w;
     }];
-    NSArray *obj = [self.dao objectsWithSQL:@"SELECT fb_word.id fb_word_id, * from fb_word, fb_word_sub where fb_word.id=fb_word_sub.word_id and fb_word.`delete`=0 and fb_word_sub.unit_id=? order by sort;" params:@[@17] rowMapper:rowmapper];
+    NSArray *obj = [self.dao objectsWithSQL:@"SELECT fb_word.id fb_word_id, * from fb_word, fb_word_sub where fb_word.id=fb_word_sub.word_id and fb_word.`delete`=0 and fb_word_sub.unit_id=? order by sort;" params:@[@18] rowMapper:rowmapper];
     NSLog(@"-\n\n\n个数: %ld", obj.count);
 }
 

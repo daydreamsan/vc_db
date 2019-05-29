@@ -3,9 +3,13 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - JSONModel (1.7.0)
-  - vc_db (0.1.1):
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
+  - vc_db (0.1.3):
     - FMDB (~> 2.6.2)
     - JSONModel (~> 1.7.0)
+    - Realm (~> 2.7.0)
     - YYModel (~> 1.0.4)
   - YYModel (1.0.4)
 
@@ -16,6 +20,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FMDB
     - JSONModel
+    - Realm
     - YYModel
 
 EXTERNAL SOURCES:
@@ -25,7 +30,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  vc_db: 280a3cfc1e1af03dac924964e16122c919fd41c5
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
+  vc_db: 51fdc6f712cfc1a44f53a7f1dffd8691677442b3
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
 PODFILE CHECKSUM: 1769d76feba2c11aefb1c8ed0c1748cb7f3d2a6a
