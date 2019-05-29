@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSONModel/JSONModel.h>
 #import "WCWordInterface.h"
 
 #pragma mark - 版本
