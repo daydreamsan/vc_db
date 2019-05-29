@@ -9,6 +9,15 @@
 #import "WCWordModel.h"
 #import <YYModel/YYModel.h>
 
+id wc_unwrapper_with_key(NSDictionary *dict, NSString *key, Class type) {
+    id obj = [dict objectForKey:key];
+    if ([obj isKindOfClass:type]) {
+        return obj;
+    } else {
+        return nil;
+    }
+}
+
 @implementation WCEdition : JSONModel
 
 + (JSONKeyMapper *)keyMapper
@@ -114,12 +123,12 @@
         self.usaPhoneticSymbols = dict[@"usa_phonetic_symbols"];
         _version = [dict[@"version"] integerValue];
         
-        _numberOfVideo = [dict[@"count"] integerValue];
-        _initial = [dict[@"initial"] stringValue];
-        self.imageURLString = [dict[@"video_image_url"] stringValue];
-        self.example = [dict[@"example"] stringValue];
-        self.score = [dict[@"score"] integerValue];
-        self.followWord = [dict[@"follow_word"] stringValue];
+        _numberOfVideo = [wc_unwrapper_with_key(dict, @"count", NSNumber.class) integerValue];
+        _initial = wc_unwrapper_with_key(dict, @"initial", NSString.class);
+        self.imageURLString = wc_unwrapper_with_key(dict, @"video_image_url", NSString.class);
+        self.example = wc_unwrapper_with_key(dict, @"example", NSString.class);
+        self.score = [wc_unwrapper_with_key(dict, @"score", NSNumber.class) integerValue];
+        self.followWord = wc_unwrapper_with_key(dict, @"follow_word", NSString.class);
     }
     return self;
 }

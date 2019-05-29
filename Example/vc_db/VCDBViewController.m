@@ -8,6 +8,7 @@
 
 #import "VCDBViewController.h"
 #import <BaseDAO.h>
+#import <WCWordModel.h>
 
 @interface VCDBViewController ()
 
@@ -24,8 +25,12 @@
     config.path = [[NSBundle mainBundle] pathForResource:@"weicigz.db" ofType:nil];
     self.dao = [BaseDAO daoWithConfiguration:config];
     
-    NSDictionary *obj = [self.dao objectWithSQL:@"select * from fb_word where id=?" params:@[@71] rowMapper:nil];
-    NSLog(@"%@", obj);
+    RowMapper *rowmapper = [RowMapper mapperWithRowMap:^id(FMResultSet *rs) {
+        WCWord *w = [[WCWord alloc] initWithDict:rs.resultDictionary];
+        return w;
+    }];
+    NSArray *obj = [self.dao objectsWithSQL:@"SELECT fb_word.id fb_word_id, * from fb_word, fb_word_sub where fb_word.id=fb_word_sub.word_id and fb_word.`delete`=0 and fb_word_sub.unit_id=? order by sort;" params:@[@17] rowMapper:rowmapper];
+    NSLog(@"-\n\n\n个数: %ld", obj.count);
 }
 
 @end
